@@ -1,5 +1,7 @@
 package br.com.authentication.api.services;
 
+import java.time.LocalDateTime;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -15,7 +17,11 @@ public class UserServices {
 	private UserRepository UserRepository;
 
 	public User save(User User) {
-		return UserRepository.save(User);
+
+		User.getEmailUser();
+		User.setCreationDate(LocalDateTime.now());
+		User.setLastLogin(LocalDateTime.now());
+		return User = UserRepository.save(User);
 	}
 
 	public User update(Long id, User User) {
