@@ -1,20 +1,14 @@
 package br.com.authentication.api.model;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "user")
@@ -40,9 +34,10 @@ public class User {
 	private LocalDateTime lastLogin;
 	private LocalDateTime alterationDate;
 
-	@OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	@JsonManagedReference
-	private List<Phone> phones;
+/*	@ManyToMany
+	@JoinTable(name = "users_phones", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "usuario"), inverseJoinColumns = @JoinColumn(name = "phone_id", referencedColumnName = "numberPhone"))
+
+	private List<Phone> phones;*/
 
 	public Long getId() {
 		return id;
@@ -91,5 +86,21 @@ public class User {
 	public void setAlterationDate(LocalDateTime alterationDate) {
 		this.alterationDate = alterationDate;
 	}
+
+	public String getEmailUser() {
+		return emailUser;
+	}
+
+	public void setEmailUser(String emailUser) {
+		this.emailUser = emailUser;
+	}
+
+/*	public List<Phone> getPhones() {
+		return phones;
+	}
+
+	public void setPhones(List<Phone> phones) {
+		this.phones = phones;
+	}*/
 
 }
