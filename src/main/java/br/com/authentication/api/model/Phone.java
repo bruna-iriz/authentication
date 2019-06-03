@@ -15,8 +15,9 @@ public class Phone {
 	private String dddPhone;
 	private String numberPhone;
 
-/*	@ManyToMany(mappedBy = "phones")
-	private List<User> users;*/
+	/*
+	 * @ManyToMany(mappedBy = "phones") private List<User> users;
+	 */
 
 	public Long getId() {
 		return id;

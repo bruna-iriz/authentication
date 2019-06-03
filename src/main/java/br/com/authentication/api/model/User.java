@@ -34,10 +34,15 @@ public class User {
 	private LocalDateTime lastLogin;
 	private LocalDateTime alterationDate;
 
-/*	@ManyToMany
-	@JoinTable(name = "users_phones", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "usuario"), inverseJoinColumns = @JoinColumn(name = "phone_id", referencedColumnName = "numberPhone"))
-
-	private List<Phone> phones;*/
+	/*
+	 * @ManyToMany
+	 * 
+	 * @JoinTable(name = "users_phones", joinColumns = @JoinColumn(name = "user_id",
+	 * referencedColumnName = "usuario"), inverseJoinColumns = @JoinColumn(name =
+	 * "phone_id", referencedColumnName = "numberPhone"))
+	 * 
+	 * private List<Phone> phones;
+	 */
 
 	public Long getId() {
 		return id;
@@ -95,12 +100,10 @@ public class User {
 		this.emailUser = emailUser;
 	}
 
-/*	public List<Phone> getPhones() {
-		return phones;
-	}
-
-	public void setPhones(List<Phone> phones) {
-		this.phones = phones;
-	}*/
+	/*
+	 * public List<Phone> getPhones() { return phones; }
+	 * 
+	 * public void setPhones(List<Phone> phones) { this.phones = phones; }
+	 */
 
 }
