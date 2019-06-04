@@ -1,7 +1,7 @@
 
 # API Authentication
 
-Esta API destina-se a suportar a criação de usuários e login..
+Esta API destina-se a suportar a criação de usuários e login.
 Desenvolvida em linguagem de programação Java implantando princípios REST, e MySQL como banco de dados.
 
 - Linguagem de Programação: Java 8
