@@ -6,7 +6,7 @@ Desenvolvida em linguagem de programação Java implantando princípios REST, e 
 
 - Linguagem de Programação: Java 8
 - Banco de dados: MySQL;
-- Conexão com MySQL: Hibernate;
+- Persistência: Hibernate;
 - Framework: Spring Boot e Spring Security
 - Ferramenta de testes: Postman
 
