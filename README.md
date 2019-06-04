@@ -21,7 +21,7 @@ Desenvolvida em linguagem de programação Java implantando princípios REST, e 
 
 ![image](https://user-images.githubusercontent.com/45856882/58849953-c5811980-8662-11e9-88bc-af66b5cb153e.png)
 
-## Phone| Methods:
+## Phone | Methods:
 -	POST/phones
 -	GET/phones
 -	GET/phones/id
