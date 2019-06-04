@@ -1,4 +1,4 @@
-package br.com.authentication.api.config;
+/*package br.com.authentication.api.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -21,8 +21,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-		clients.inMemory().withClient("admin").secret("pwd").scopes("read", "write").authorizedGrantTypes("password")
-				.accessTokenValiditySeconds(1800);
+		clients.inMemory().withClient("user").secret("p@ssw0rd").scopes("read", "write")
+				.authorizedGrantTypes("password").accessTokenValiditySeconds(1800);
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Bean
 	public JwtAccessTokenConverter accessTokenConverter() {
 		JwtAccessTokenConverter accessTokenConverter = new JwtAccessTokenConverter();
-		accessTokenConverter.setSigningKey("pwd");
+		accessTokenConverter.setSigningKey("autentica");// chave que valida o token
 		return accessTokenConverter;
 	}
 
@@ -44,3 +44,4 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	}
 
 }
+*/
