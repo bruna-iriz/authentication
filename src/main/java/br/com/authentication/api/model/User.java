@@ -72,8 +72,8 @@ public class User {
 		return creationDate;
 	}
 
-	public void setCreationDate(LocalDateTime creationDate) {
-		this.creationDate = creationDate;
+	public void setCreationDate(LocalDateTime localDateTime) {
+		this.creationDate = localDateTime;
 	}
 
 	public LocalDateTime getLastLogin() {
