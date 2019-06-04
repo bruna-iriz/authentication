@@ -1,4 +1,4 @@
-/*package br.com.authentication.api.config;
+package br.com.authentication.api.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -44,4 +44,3 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	}
 
 }
-*/
