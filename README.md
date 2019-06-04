@@ -9,3 +9,4 @@ Desenvolvida em linguagem de programação Java implantando princípios REST, e 
 - Conexão com MySQL: Hibernate;
 - Framework: Spring Boot e Spring Security
 - Ferramenta de testes: Postman
+
