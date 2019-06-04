@@ -10,3 +10,4 @@ Desenvolvida em linguagem de programação Java implantando princípios REST, e 
 - Framework: Spring Boot e Spring Security
 - Ferramenta de testes: Postman
 
+![image](https://user-images.githubusercontent.com/45856882/58849855-7aff9d00-8662-11e9-91ac-4472385192a5.png)
